@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Can I retrofit wall insulation without removing the plaster?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — for brick-veneer or weatherboard Beaconsfield homes with an empty cavity, we pump-fill the cavity with bonded polyester fibre or blown-in cellulose through small (16mm) holes drilled from the outside. Holes are patched and colour-matched. No plaster damage, no living-space disruption. The process takes one day for a typical 180m² home. Heritage homes with solid brick (no cavity) can't be cavity-filled — they need external rendered insulation or internal stud-wall lining, both of which are bigger jobs." }
+    },
+    {
+      "@type": "Question",
+      "name": "What R-value do walls need in Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "NCC 2022 / NatHERS 7-star requires R2.7 (total system) for walls in Climate Zone 6. That's typically achieved with R2.5 batts in a 90mm stud cavity, plus the brick veneer / cladding sarking layers. For new builds we install R2.5–R2.7 polyester or glasswool batts. For retrofit cavity-fill, blown-in bonded polyester achieves around R1.6–R2.0 in a standard 50mm cavity — significant improvement on an empty cavity (effectively R0.4)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is the VIC Energy Upgrades rebate available for wall insulation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Wall insulation isn't currently on the headline VEU activity list the way ceiling insulation is. However, if you're doing a whole-home upgrade as part of a NatHERS-modelled retrofit (often paired with ceiling, underfloor and draft-sealing), the bundled energy-efficiency rebate pathway can include walls. We confirm at the free site visit. Ceiling is the highest-rebate single activity; walls deliver excellent thermal performance but at full cost." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about condensation risk in retrofitted walls?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Condensation is the real risk in Beaconsfield's cold-wet winters — moisture from warm indoor air meets the cold outer face of the cavity, condenses, and saturates the insulation. We mitigate by: (1) using vapour-permeable bonded polyester rather than packed-tight blown cellulose; (2) confirming the existing sarking is vapour-permeable (not sealed plastic); (3) ventilation gaps at top and bottom of cavity per AS 4200.2; (4) recommending mechanical ventilation if the home has been previously sealed. Cheap cavity-fills that ignore vapour management cause mould inside 3 years." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can heritage Pakenham / Beaconsfield homes have walls insulated?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes, with care. Pre-1950 solid-brick heritage homes don't have a cavity to fill — options are external EIFS render systems (expensive, changes appearance, needs heritage approval), internal stud-wall lining (loses 75mm of floor space per wall, plaster work), or just accepting walls remain R0.4 and putting effort into ceiling + underfloor + draft-sealing instead. We're honest about which homes are worth wall-insulating; sometimes a $4K ceiling + draft-seal beats a $20K wall job in real-world comfort." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does wall insulation cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "External cavity pump-fill (bonded polyester or cellulose): $35–$55/m² of wall area. New-build batts during construction: $15–$25/m². Internal stud-wall retrofit (open plaster): $45–$70/m². EIFS external render system: $180–$280/m². A typical 180m² Beaconsfield brick-veneer home has around 130m² of external wall — cavity fill $4,500–$7,100 all up, one day on site. Heritage homes vary widely depending on approach." }
+    }
+  ]
+};
+---
+<Layout
+  title="Wall Insulation Beaconsfield | Cavity Pump-Fill & Heritage Homes | (03) 9003 0108"
+  description="Wall insulation for Beaconsfield, Officer, Pakenham brick-veneer and weatherboard homes — external cavity pump-fill (no plaster damage), new-build batts, heritage internal lining. AS/NZS 4859 compliant. $35–$55/m² cavity fill."
+  canonical="https://beaconsfieldinsulation.com.au/services/wall-insulation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">External pump-fill &middot; no plaster damage</span>
+      <h1>Wall insulation in <span class="accent">Beaconsfield &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        External cavity pump-fill for existing brick-veneer and weatherboard
+        homes &mdash; no plaster damage, one day on site, AS/NZS 4859 compliant.
+        Plus new-build R2.5&ndash;R2.7 batt installation and heritage-home
+        internal lining. Honest advice on which homes are worth wall-insulating.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Wall insulation methods.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>External cavity pump-fill (brick veneer / weatherboard)</strong> &mdash; 16mm holes drilled from outside, bonded polyester or cellulose pumped into cavity, holes patched + colour-matched. One day on site. Achieves ~R1.6&ndash;R2.0. $35&ndash;$55/m&sup2;.</li>
+          <li><strong>New-build batt installation</strong> &mdash; R2.5 or R2.7 Earthwool, Bradford or Knauf polyester batts installed during framing stage. $15&ndash;$25/m&sup2; (installation only, batts supplied separately).</li>
+          <li><strong>Heritage internal stud-wall lining</strong> &mdash; new internal stud wall built off existing solid brick, batts installed, replaster. Loses 75mm of floor space. $45&ndash;$70/m&sup2;.</li>
+          <li><strong>EIFS external render system</strong> &mdash; foam panel system fixed to outside of wall + rendered. Changes appearance, needs heritage approval, $180&ndash;$280/m&sup2;.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why cavity pump-fill is the Beaconsfield default.</h3>
+        <p>
+          Most Beaconsfield, Officer and Cardinia Lakes homes built between
+          1980 and 2010 are brick-veneer with an empty 50mm cavity behind the
+          brick. That cavity has an effective insulation value of about R0.4
+          &mdash; almost nothing. Pump-filling with bonded polyester takes it
+          to around R1.6&ndash;R2.0, a 4-5x improvement. Critically, it's done
+          entirely from the outside (16mm holes drilled in the mortar joints,
+          patched and colour-matched), so there's no plaster damage and you
+          stay living in the house while we work.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Condensation risk &mdash; the honest installer's caveat.</h3>
+        <p>
+          Beaconsfield winters are cold and wet. When you put insulation in a
+          previously empty wall cavity, you change how moisture moves through
+          the wall &mdash; warm indoor air can hit the cold outer face and
+          condense. Bad cavity-fills cause mould and damp inside 3 years. We
+          mitigate by:
+        </p>
+        <ul>
+          <li>Using <strong>vapour-permeable bonded polyester</strong> rather than packed-tight cellulose</li>
+          <li>Confirming the existing sarking is vapour-permeable (most pre-2010 builds are fine; some 2010+ have impermeable plastic sarking that needs upgrading first)</li>
+          <li>Ventilation gaps at top and bottom of cavity per AS 4200.2</li>
+          <li>Recommending mechanical ventilation if the home has been previously sealed for heating/cooling efficiency</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Heritage homes &mdash; when wall insulation isn't worth it.</h3>
+        <p>
+          Pre-1950 solid-brick Pakenham heritage homes don't have a cavity to
+          fill. Your options are expensive (external EIFS render, internal
+          stud-wall lining) or low-impact (accept walls stay R0.4, spend the
+          budget on ceiling + underfloor + draft-sealing instead). Honestly,
+          for a heritage home, <strong>$4,000 in ceiling + draft-sealing
+          usually beats $20,000 in wall insulation</strong> for real-world
+          winter comfort. We'll walk you through both options at quote stage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">New-build wall batts &mdash; NatHERS 7-star compliance.</h3>
+        <p>
+          For new builds (Cardinia Lakes estate, Officer Atherstone, Pakenham
+          Springs etc.) NatHERS 7-star generally requires R2.7 total system
+          for walls. We install R2.5 or R2.7 Earthwool, Bradford or Knauf
+          batts during the framing stage, sized correctly to the stud cavity,
+          neatly fitted around windows and services. Site visit confirms
+          builder spec before order.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li>External cavity pump-fill: $35&ndash;$55/m&sup2; of wall area</li>
+          <li>New-build R2.5/R2.7 batts: $15&ndash;$25/m&sup2;</li>
+          <li>Heritage internal lining: $45&ndash;$70/m&sup2;</li>
+          <li>EIFS external render: $180&ndash;$280/m&sup2;</li>
+          <li>Typical 180m&sup2; Beaconsfield brick-veneer cavity fill: $4,500&ndash;$7,100, one day on site</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free wall insulation assessment.</h2>
+        <p>Cavity check, vapour-permeability check, honest worth-it advice.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

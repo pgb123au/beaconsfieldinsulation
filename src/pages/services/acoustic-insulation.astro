@@ -1,0 +1,167 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between thermal and acoustic insulation batts?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Thermal batts are rated by R-value (thermal resistance). Acoustic batts are rated by NRC (Noise Reduction Coefficient) and STC (Sound Transmission Class). They look similar but the fibre density and structure are different — acoustic batts are denser to absorb sound. Some products (Knauf Earthwool Acoustic, Bradford Sound Screen) are dual-rated and work for both, which is what we install most often. Don't accept a regular R2.5 ceiling batt being sold to you as 'acoustic' — check the NRC/STC rating on the data sheet." }
+    },
+    {
+      "@type": "Question",
+      "name": "Where do you install acoustic insulation in a home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Three common Beaconsfield / Cardinia Shire applications: (1) media room / home theatre walls and ceiling, to keep sound in and outside noise out; (2) bedroom-to-bedroom party walls in townhouses and dual-occupancy duplexes, for STC compliance with NCC F5; (3) bathroom and laundry walls, to reduce plumbing noise transfer. Less commonly: home office walls (work-from-home Zoom-call privacy), kids' play-room ceilings under upstairs bedrooms." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do duplex / townhouse party walls have legal sound-rating requirements?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — NCC F5 (formerly Part F5) requires party walls between sole-occupancy units to achieve Rw + Ctr ≥ 50 (airborne sound) and L'nT,w ≤ 62 (impact sound for floors). Most Cardinia Shire townhouse developments (Cardinia Lakes, Officer Atherstone, parts of Pakenham) need this compliance. We install Knauf Earthwool Acoustic or Bradford Sound Screen batts in the party wall cavity along with the required staggered-stud or resilient-channel construction. Compliance test done at completion." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will acoustic batts actually make my media room quieter?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Acoustic batts alone reduce sound transmission by 5–8dB compared to an empty cavity — useful, not transformative. For a real home-theatre experience you need the batts plus other elements: double-stud or resilient-channel wall construction, acoustic-rated plasterboard (e.g. Gyprock Soundchek), door seals, and solid-core doors. We do the batts and can advise on the rest, or work with your builder. Realistic expectation: a Pakenham media room can go from 'kids playing next door interrupt the movie' to 'you only notice during quiet dialogue'." }
+    },
+    {
+      "@type": "Question",
+      "name": "Are acoustic batts safe — non-itch options for asthmatic households?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes. Polyester-based acoustic batts (Autex GreenStuf Acoustic, Knauf Earthwool Polyester Acoustic) are non-itch, non-respirable, and ideal for asthmatic households. They're slightly more expensive than glasswool acoustic batts but the comfort during installation and lifelong air-quality benefit is worth it for kids' bedrooms and bathrooms. Cost difference: ~$5–$10/m² premium for polyester over glasswool." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does acoustic insulation cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Acoustic batts only (dual-rated R2.5 + STC): $45–$65/m². Includes Knauf Earthwool Acoustic or Bradford Sound Screen. Polyester (non-itch) premium: +$5–$10/m². NCC F5 compliant party wall (batts + resilient channel + acoustic plasterboard, installed): $180–$280/m² of wall area. Media room full acoustic package (walls + ceiling + door seals): $4,500–$9,000 for a typical 4×5m room." }
+    }
+  ]
+};
+---
+<Layout
+  title="Acoustic Insulation Beaconsfield | Media Room & Party Wall Sound Batts | (03) 9003 0108"
+  description="Acoustic insulation for Beaconsfield, Pakenham, Cardinia Lakes — sound-rated batts for media rooms, home theatre, party walls in townhouses/duplexes (NCC F5 compliant), bathrooms. Knauf Acoustic, Bradford Sound Screen. $45–$65/m²."
+  canonical="https://beaconsfieldinsulation.com.au/services/acoustic-insulation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Media rooms &middot; party walls &middot; NCC F5</span>
+      <h1>Acoustic insulation in <span class="accent">Beaconsfield &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Sound-rated batts for media rooms, home theatres, party walls in
+        townhouses and duplexes (NCC F5 Rw + Ctr &ge; 50 compliant),
+        bathroom plumbing-noise reduction. Knauf Earthwool Acoustic,
+        Bradford Sound Screen, Autex polyester options.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Acoustic insulation we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Knauf Earthwool Acoustic R2.5</strong> &mdash; dual-rated thermal + acoustic, glasswool with ECOSE binder. AS/NZS 4859.1 + NRC tested. Our default. ~$45&ndash;$60/m&sup2;.</li>
+          <li><strong>Bradford Sound Screen R2.5</strong> &mdash; Australian-made dual-rated acoustic batts. ~$45&ndash;$60/m&sup2;.</li>
+          <li><strong>Autex GreenStuf Acoustic / Knauf Polyester Acoustic</strong> &mdash; non-itch polyester, premium for asthmatic households. ~$50&ndash;$70/m&sup2;.</li>
+          <li><strong>NCC F5 compliant party-wall system</strong> &mdash; acoustic batts + resilient channel + acoustic plasterboard for duplex/townhouse party walls. $180&ndash;$280/m&sup2; installed.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Media rooms &amp; home theatres &mdash; Beaconsfield's growing demand.</h3>
+        <p>
+          As Cardinia Lakes and Officer new-build homes get bigger, the
+          dedicated media room is back &mdash; usually a 4&times;5m room
+          adjacent to the main living, used for movies, gaming, and "kids
+          don't interrupt the test cricket" purposes. We install acoustic
+          batts in the walls and ceiling (around $4,500&ndash;$9,000 for a
+          full room) which delivers a 5&ndash;8dB reduction on its own. For
+          a serious home theatre experience that's the starting point;
+          double-stud construction, acoustic plasterboard, door seals and
+          solid-core doors handle the rest.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Party walls in townhouses and duplexes &mdash; NCC F5.</h3>
+        <p>
+          NCC F5 (formerly Part F5) requires party walls between sole-occupancy
+          units to achieve <strong>Rw + Ctr &ge; 50</strong> for airborne sound
+          and <strong>L'nT,w &le; 62</strong> for impact sound (floors above
+          adjoining units). Most Cardinia Shire townhouse developments &mdash;
+          Cardinia Lakes terrace lots, Officer Atherstone duplexes, dual-occ
+          subdivisions in Pakenham &mdash; need this compliance signed off at
+          occupancy.
+        </p>
+        <p>
+          We install the acoustic batts (Knauf Earthwool Acoustic R2.5 or
+          equivalent) in the party-wall cavity alongside the staggered-stud
+          or resilient-channel construction and acoustic plasterboard your
+          builder/engineer has specified. Compliance test at completion to
+          confirm Rw + Ctr &ge; 50. We coordinate the testing with the
+          builder.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Bathroom and laundry wall acoustics.</h3>
+        <p>
+          Cheap-build new homes routinely skip wall insulation between the
+          bathroom and adjacent rooms &mdash; you can hear the shower running
+          from the next bedroom. R2.5 acoustic batts in bathroom party walls
+          drop plumbing noise dramatically. Common retrofit during bathroom
+          renovations when the wall is already open.
+        </p>
+
+        <h3 style="margin-top: 2rem;">What acoustic batts won't do.</h3>
+        <p>
+          Acoustic batts absorb sound that's already passing through the wall
+          cavity. They don't stop <strong>flanking transmission</strong>
+          (sound travelling through floor structures, ceiling cavities, or
+          shared ductwork). For party walls, the resilient-channel construction
+          handles flanking. For media rooms, decoupled door seals and a solid
+          door matter as much as wall batts. We'll walk through the realistic
+          expectations at quote stage.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li>Acoustic batts only (Knauf, Bradford glasswool dual-rated): $45&ndash;$65/m&sup2;</li>
+          <li>Polyester non-itch acoustic: $50&ndash;$70/m&sup2;</li>
+          <li>Full NCC F5 party-wall system (batts + channel + plasterboard): $180&ndash;$280/m&sup2;</li>
+          <li>Typical 4&times;5m media room full acoustic package: $4,500&ndash;$9,000</li>
+          <li>Bathroom wall acoustic retrofit (during reno): $900&ndash;$1,800</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free acoustic insulation assessment.</h2>
+        <p>Media room, party wall, or bathroom &mdash; honest realistic expectations.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

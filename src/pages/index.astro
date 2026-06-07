@@ -1,0 +1,286 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What does ceiling insulation cost in Beaconsfield in 2026?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ceiling insulation in Beaconsfield, Officer, Pakenham and Cardinia Lakes costs $25–$40/m² for R5.0 Earthwool / Bradford / Knauf batts installed, or $20–$30/m² for blown-in cellulose. R6.0 / R7.0 upgrade adds $3–$8/m². A typical 180m² single-storey home is $4,500–$7,200 ceiling-only. With VIC Energy Upgrades / VEU rebate eligibility (for owner-occupied / rental properties with R2.0 or lower existing insulation) the net out-of-pocket often drops to $1,500–$3,500. Wall pump-fill $35–$55/m², underfloor $30–$50/m², acoustic upgrade $45–$65/m²." }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I eligible for the VIC Energy Upgrades (VEU) rebate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes for most Cardinia Shire homeowners with existing ceiling insulation R2.0 or lower (or no insulation). The VIC Energy Upgrades program (formerly Victorian Energy Efficiency Target / VEET) rebates ceiling-insulation upgrades for owner-occupied and rental properties through accredited installers. Rebate typically covers 50–70% of the install cost. Eligibility depends on existing R-value, product (must be on the VEU activity register) and accredited installer. We're accredited and lodge the paperwork — you sign one form at quote acceptance. Wall, underfloor and acoustic aren't currently headline VEU activities but may be credited as part of bundled energy-efficiency retrofits." }
+    },
+    {
+      "@type": "Question",
+      "name": "What R-value insulation does NatHERS 7-star require?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For Cardinia Shire (Climate Zone 6) the NCC 2022 / NatHERS 7-star minimums are: Ceiling R5.0, Walls R2.7 total system (R2.5 batts in 90mm stud cavity plus brick/cladding sarking), Suspended floors R2.0. For Beaconsfield cold-microclimate sites we usually recommend going above these — R6.0–R7.0 ceiling, R2.5+ underfloor — for noticeable winter comfort improvements at small cost premiums. Most NatHERS 7-star new builds in Cardinia Lakes and Officer Atherstone meet these as a build-time spec; the retrofit gap is in pre-2015 homes where insulation is often R2.0–R3.5." }
+    },
+    {
+      "@type": "Question",
+      "name": "Batts or blown-in cellulose — which is right for my Beaconsfield home?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Batts (Knauf Earthwool, Bradford Gold, Knauf Polyester) suit accessible trussed flat ceilings with clear joist bays — fast, neat, easy to maintain around downlights. Blown-in cellulose (Insulshield, GreenStuf) suits cathedral ceilings, awkward roof shapes, dropped soffits, and older Beaconsfield homes where batts can't be laid cleanly. Cellulose also fills tiny gaps batts leave at joist edges, so the in-situ R-value is closer to the rated. Cost is similar: batts $25–$40/m², blown-in $20–$30/m². We assess at the free site visit and recommend honestly — usually batts for new estate homes, cellulose for older heritage builds." }
+    },
+    {
+      "@type": "Question",
+      "name": "What if my installer over-stuffs the batts?",
+      "acceptedAnswer": { "@type": "Answer", "text": "This is the single biggest reason real-world R-values fall short of rated. Batts get their thermal resistance from still air trapped in the fluffy fibre structure. Compress an R5.0 batt to fit a smaller cavity and it performs like an R3.0. Cheap operators do this all the time — it's faster and looks fuller on photo. We size the batt to the joist depth, not the rated R-value, even if that means going up a thickness or down a rating. Tell us if a previous installer left compressed batts; we can audit and re-do." }
+    }
+  ]
+};
+---
+<Layout
+  title="Beaconsfield Insulation | Ceiling, Wall, Underfloor, Roof, Acoustic | (03) 9003 0108"
+  description="Insulation contractors for Beaconsfield, Officer, Pakenham, Cardinia Lakes and Cardinia Shire. Ceiling (R5.0+), wall cavity pump-fill, underfloor, roof sarking, acoustic. NatHERS 7-star compliant, VIC Energy Upgrades / VEU rebate-eligible. AS/NZS 4859 certified. Free assessment.">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+<style>
+  /* Image-banner integration (added 2026-06-04) */
+  .hero {
+    position: relative;
+    background-image: linear-gradient(135deg, rgba(15, 23, 42, 0.55), rgba(15, 23, 42, 0.28)), url('/images/hero.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #fff;
+  }
+  .hero h1,
+  .hero .hero-sub,
+  .hero .hero-eyebrow,
+  .hero .hero-trust,
+  .hero .accent {
+    color: #fff;
+  }
+  .hero .accent {
+    color: #fcd34d;
+  }
+  .hero .hero-eyebrow {
+    color: rgba(255, 255, 255, 0.85);
+  }
+  .hero .hero-trust {
+    color: rgba(255, 255, 255, 0.78);
+  }
+
+  .image-banner {
+    width: 100%;
+    max-height: 460px;
+    overflow: hidden;
+    margin: 0;
+  }
+  .image-banner img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 70%;
+    display: block;
+  }
+  .image-banner figcaption {
+    background: rgba(15, 23, 42, 0.92);
+    color: rgba(255, 255, 255, 0.85);
+    padding: 0.85rem 1.25rem;
+    text-align: center;
+    font-size: 0.95rem;
+    margin: 0;
+  }
+</style>
+
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">NatHERS 7-star &middot; VIC Energy Upgrades rebate-eligible</span>
+      <h1>Beaconsfield&rsquo;s specialist <span class="accent">ceiling, wall &amp; underfloor</span> insulation contractors.</h1>
+      <p class="hero-sub">
+        R5.0+ ceiling batts, blown-in cellulose, cavity pump-fill for walls,
+        underfloor polyester, anti-condensation roof sarking, acoustic batts
+        for media rooms and party walls. NCC 2022 / NatHERS 7-star compliant,
+        VIC Energy Upgrades (VEU) rebates lodged for you, AS/NZS 4859 certified,
+        ICANZ-aligned. Free on-site assessment.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free assessment</a>
+      </div>
+
+      <div class="hero-trust">
+        <div><strong>48 hrs</strong>From call to fixed quote</div>
+        <div><strong>$3K&ndash;$12K</strong>Typical project range</div>
+        <div><strong>R5.0+</strong>NatHERS 7-star ceiling</div>
+        <div><strong>VEU</strong>Rebates lodged for you</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">What we install</span>
+      <h2>Five insulation services.</h2>
+      <p class="section-lead">
+        From a single-day ceiling retrofit (often VEU rebate-eligible) through
+        to a full-house thermal envelope upgrade &mdash; ceiling, walls,
+        underfloor, roof sarking. Plus acoustic batts for media rooms and
+        townhouse party walls.
+      </p>
+
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/ceiling-insulation/">
+          <div class="svc-icon" aria-hidden="true">&#9728;</div>
+          <h3>Ceiling insulation</h3>
+          <p>R5.0+ Earthwool, Bradford, Knauf batts and blown-in cellulose. Retrofit existing homes or new builds. VIC Energy Upgrades (VEU) rebate-eligible. ~$25&ndash;$40/m&sup2; installed.</p>
+          <span class="svc-link">See ceiling insulation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/wall-insulation/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Wall insulation</h3>
+          <p>External cavity pump-fill (no plaster damage), new-build batts, heritage internal lining. AS/NZS 4859 compliant, vapour-managed for cold Beaconsfield winters. ~$35&ndash;$55/m&sup2;.</p>
+          <span class="svc-link">See wall insulation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/underfloor-insulation/">
+          <div class="svc-icon" aria-hidden="true">&#9783;</div>
+          <h3>Underfloor insulation</h3>
+          <p>R2.5 polyester batts under suspended timber floors. Stainless wire mesh support. Fixes cold floors and drafts in pre-1990 Beaconsfield / Pakenham homes. ~$30&ndash;$50/m&sup2;.</p>
+          <span class="svc-link">See underfloor insulation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/roof-insulation/">
+          <div class="svc-icon" aria-hidden="true">&#9618;</div>
+          <h3>Roof &amp; sarking</h3>
+          <p>Anti-condensation foil sarking under Colorbond and tile, reflective radiant barriers, rigid foam above-rafter. AS 4200.2 condensation managed. ~$18&ndash;$140/m&sup2;.</p>
+          <span class="svc-link">See roof insulation &rarr;</span>
+        </a>
+
+        <a class="svc-card" href="/services/acoustic-insulation/">
+          <div class="svc-icon" aria-hidden="true">&#9608;</div>
+          <h3>Acoustic insulation</h3>
+          <p>Sound-rated batts for media rooms, home theatres, NCC F5 party walls in townhouses/duplexes, bathroom plumbing noise. Knauf Acoustic, Bradford Sound Screen. ~$45&ndash;$65/m&sup2;.</p>
+          <span class="svc-link">See acoustic insulation &rarr;</span>
+        </a>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/result.jpg" alt="Fully insulated roof cavity with Earthwool batts" loading="lazy" decoding="async" />
+    <figcaption>Ceiling, wall, underfloor — all to AS/NZS 4859.</figcaption>
+  </figure>
+
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">Why a Cardinia Shire specialist</span>
+      <h2>Three things every Beaconsfield insulation job needs to get right.</h2>
+      <div class="divider"></div>
+
+      <div style="display: grid; grid-template-columns: 1fr; gap: 2rem; max-width: 60rem;">
+        <div>
+          <h3>NatHERS 7-star &amp; NCC 2022 R-values done properly.</h3>
+          <p>
+            Cardinia Shire sits in NCC <strong>Climate Zone 6</strong>. New
+            builds must meet NatHERS 7-star, which generally needs R5.0+
+            ceiling, R2.7 total system walls, R2.0 suspended floors. For
+            cold-microclimate Beaconsfield / Officer Upper sites we usually
+            recommend R6.0&ndash;R7.0 ceiling &mdash; the cost premium is
+            small ($1&ndash;$3/m&sup2;) and the winter comfort difference is
+            big. We size batts to cavities (never compress them &mdash; that
+            destroys the R-value) and use only AS/NZS 4859 certified products
+            from ICANZ-aligned manufacturers.
+          </p>
+        </div>
+        <div>
+          <h3>VIC Energy Upgrades (VEU) rebate lodged for you.</h3>
+          <p>
+            For owner-occupied or rental Beaconsfield homes with existing
+            ceiling insulation <strong>R2.0 or lower</strong>, the VIC Energy
+            Upgrades program rebates ceiling-insulation upgrades through
+            accredited installers. Typical rebate is <strong>50&ndash;70% of
+            the install cost</strong>. We're accredited, we confirm eligibility
+            at the free site visit, you sign a single VEU authorisation at
+            quote acceptance, and we administer the certificate paperwork.
+            The rebate is netted off your invoice &mdash; no upfront cash
+            from you for the rebate side of the job.
+          </p>
+        </div>
+        <div>
+          <h3>Condensation managed, not ignored.</h3>
+          <p>
+            Beaconsfield winters are cold and wet. Bad cavity-fills and
+            careless ceiling installs cause condensation, saturated batts,
+            and mould inside 3 years. We use <strong>vapour-permeable</strong>
+            sarking and bonded polyester in cavity fills, maintain sub-floor
+            vent balance per AS 1684, and check existing roof sarking before
+            adding ceiling load. Where a home has been previously sealed for
+            heating/cooling efficiency, we recommend mechanical ventilation
+            as part of the upgrade. The honest version: more insulation
+            without considering vapour movement makes things worse, not better.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Service areas</span>
+      <h2>Where we install.</h2>
+      <p class="lead" style="max-width: 42rem; margin-bottom: 1rem;">
+        Full Cardinia Shire coverage. Cold-microclimate Beaconsfield, mature
+        Pakenham heritage homes, new-build Cardinia Lakes and Officer
+        Atherstone estates, and the wider Heritage Springs / Beaconsfield
+        Upper rural-residential zone.
+      </p>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+        <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+        <span class="area-pill area-pill-static">Berwick (adj.)</span>
+        <span class="area-pill area-pill-static">Officer South</span>
+        <span class="area-pill area-pill-static">Nar Nar Goon</span>
+        <span class="area-pill area-pill-static">Lakeside</span>
+        <span class="area-pill area-pill-static">Atherstone</span>
+      </div>
+    </div>
+  </section>
+  <figure class="image-banner">
+    <img src="/images/detail.jpg" alt="R6.0 glasswool batt fitted snugly between rafters" loading="lazy" decoding="async" />
+    <figcaption>R5.0 / R6.0 batts. 50-year material warranty.</figcaption>
+  </figure>
+
+
+  <section class="section section-dark">
+    <div class="section-inner">
+      <span class="section-eyebrow">How it works</span>
+      <h2>From assessment to handover &mdash; 5 stages.</h2>
+
+      <div class="steps">
+        <div class="step"><div class="step-num">1</div><h3>Free site visit</h3><p>Roof-cavity check, R-value audit, sub-floor inspection if applicable, VEU eligibility confirmed. 30&ndash;45 min.</p></div>
+        <div class="step"><div class="step-num">2</div><h3>Fixed quote</h3><p>Written quote within 48 hours with batt brand/R-value, VEU rebate net of cost, install timing. No hidden extras.</p></div>
+        <div class="step"><div class="step-num">3</div><h3>VEU paperwork</h3><p>If eligible, you sign one customer authorisation. We administer the certificate creation and rebate.</p></div>
+        <div class="step"><div class="step-num">4</div><h3>Install</h3><p>Ceiling 1 day, cavity pump-fill 1 day, underfloor 2&ndash;3 days. Clean handover, no mess in living spaces.</p></div>
+        <div class="step"><div class="step-num">5</div><h3>Handover</h3><p>Install certificate (NCC compliance), VEU rebate invoice, product data sheets, 10-year workmanship warranty.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Ready for a free insulation assessment?</h2>
+        <p>30&ndash;45 minutes on-site. We measure existing R-values, check VEU eligibility, recommend honestly.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

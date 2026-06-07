@@ -1,0 +1,166 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What R-value ceiling insulation should I install in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For Beaconsfield, Officer and Cardinia Shire (Climate Zone 6), the NCC 2022 / NatHERS 7-star minimum for ceilings is R5.0. We install R5.0 as the floor, but on Berwick / Beaconsfield cold-microclimate sites we usually recommend R6.0 or R7.0 — the cost difference is small ($1–$3/m²) and the winter comfort difference is substantial. R-values above R7.0 are diminishing returns unless you also fix wall and underfloor losses." }
+    },
+    {
+      "@type": "Question",
+      "name": "Should I use batts or blown-in cellulose for ceiling insulation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Batts (Earthwool, Bradford, Knauf glasswool or polyester) suit accessible trussed ceilings with clear joist bays — fast, neat, easy to maintain around downlights. Blown-in cellulose suits cathedral ceilings, awkward roof shapes, or older Beaconsfield homes where batts can't be laid cleanly between rafters. Cellulose also fills tiny gaps that batts leave at joist edges, so the in-situ R-value is closer to the rated R-value. Cost is similar: batts $25–$40/m², blown-in $20–$30/m²." }
+    },
+    {
+      "@type": "Question",
+      "name": "Am I eligible for the VIC Energy Upgrades / VEU rebate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes for most Cardinia Shire homeowners — the VIC Energy Upgrades program (formerly Victorian Energy Efficiency Target / VEET) rebates ceiling insulation upgrades for owner-occupied or rental properties built before the current ceiling-insulation standard came in. Eligibility depends on existing R-value (must be R2.0 or lower or no insulation), product compliance (must be on the VEU activity list) and accredited installer. Rebate typically covers 50–70% of the install cost. We're accredited and lodge the paperwork for you — you sign one form at handover." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why don't you over-stuff batts to get a higher R-value?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Glasswool and polyester batts get their thermal resistance from the still air trapped inside their fluffy structure. Compressing a batt to fit a too-small cavity destroys that structure — a compressed R5.0 batt performs like an R3.0. We always size the batt to the cavity, even if it means going up a thickness (R6.0 in a deeper joist bay) rather than cramming an R7.0 batt into an R5.0 space. Bad installers do this all the time; it's the single biggest reason real-world R-values fall short of rated." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does ceiling insulation cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "R5.0 batts (Earthwool, Bradford, Knauf) installed: $25–$40/m². Blown-in cellulose: $20–$30/m². R6.0 / R7.0 upgrade adds $3–$8/m². A typical 180m² Beaconsfield single-storey home costs $4,500–$7,200 for ceiling-only. With VEU rebate eligibility that often drops to $1,500–$3,500 out of pocket. Larger Heritage Springs / Pakenham acreage homes ($6K–$12K) scale up proportionally." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which batt brands do you stock?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Knauf Earthwool (the default — recycled-glass content, AS/NZS 4859.1 certified, ICANZ member), Bradford Gold and Optimo (Australian-made), and Knauf Polyester (Earthwool Acoustic — no itch, suits asthmatic homes). All three brands are on the VIC Energy Upgrades approved list and are AS/NZS 4859 compliant. We don't stock cheap unbranded import batts — they often miss the rated R-value by 10–20% in independent testing." }
+    }
+  ]
+};
+---
+<Layout
+  title="Ceiling Insulation Beaconsfield | R5.0 Batts & Blown-In Cellulose | (03) 9003 0108"
+  description="Ceiling insulation for Beaconsfield, Officer, Pakenham, Cardinia Lakes — R5.0+ Earthwool, Bradford, Knauf batts and blown-in cellulose. VIC Energy Upgrades / VEU rebate-eligible. NatHERS 7-star compliant. AS/NZS 4859 certified. $25–$40/m²."
+  canonical="https://beaconsfieldinsulation.com.au/services/ceiling-insulation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">R5.0+ &middot; NatHERS 7-star compliant</span>
+      <h1>Ceiling insulation in <span class="accent">Beaconsfield &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        R5.0, R6.0 and R7.0 batts (Earthwool, Bradford, Knauf) plus blown-in
+        cellulose for awkward roof shapes. NCC 2022 / NatHERS 7-star compliant,
+        VIC Energy Upgrades rebate-eligible, AS/NZS 4859 certified. Retrofit
+        existing homes or first-fit new builds.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Ceiling insulation we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Knauf Earthwool R5.0 / R6.0 / R7.0</strong> &mdash; recycled-glass batts with ECOSE bio-based binder. AS/NZS 4859.1 certified, ICANZ member brand. Our default. ~$28&ndash;$42/m&sup2; installed.</li>
+          <li><strong>Bradford Gold / Optimo R5.0 / R6.0</strong> &mdash; Australian-made glasswool, solid value brand. ~$25&ndash;$38/m&sup2;.</li>
+          <li><strong>Knauf Earthwool Polyester (acoustic-friendly)</strong> &mdash; non-itch fibre, suits asthmatic homes, slightly higher cost. ~$32&ndash;$45/m&sup2;.</li>
+          <li><strong>Blown-in cellulose (Insulshield, GreenStuf)</strong> &mdash; 85% recycled paper with borate fire-retardant. Fills cathedral ceilings, awkward truss runs, dropped soffits. ~$20&ndash;$30/m&sup2;.</li>
+          <li><strong>Knauf Earthwool R5.0 ceiling roll</strong> &mdash; large continuous roll for warehouse-style trusses. ~$24&ndash;$36/m&sup2;.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why R5.0 minimum, R6.0&ndash;R7.0 recommended for Beaconsfield.</h3>
+        <p>
+          Beaconsfield, Officer Upper and the Berwick microclimate cop colder
+          winters than the broader Melbourne average &mdash; we routinely see
+          1&ndash;3&deg;C overnight minimums in July&ndash;August. NCC 2022 sets
+          R5.0 as the Climate Zone 6 minimum for ceilings, and NatHERS 7-star
+          new builds typically need that or higher. We push customers to
+          <strong>R6.0 or R7.0 on cold-microclimate sites</strong> &mdash; the
+          extra $1&ndash;$3/m&sup2; pays back in 2&ndash;4 winters through
+          reduced gas heating.
+        </p>
+
+        <h3 style="margin-top: 2rem;">VIC Energy Upgrades (VEU) rebate process.</h3>
+        <p>
+          For owner-occupied or rental Beaconsfield homes with existing ceiling
+          insulation R2.0 or lower (or no insulation), the VIC Energy Upgrades
+          program rebates ceiling-insulation upgrades through accredited
+          installers. Typical rebate covers 50&ndash;70% of the install cost.
+          The paperwork:
+        </p>
+        <ul>
+          <li>We assess existing insulation at the free site visit (often a 5-minute roof-cavity check)</li>
+          <li>We confirm VEU eligibility against the activity register and your property type</li>
+          <li>You sign a single VEU customer authorisation at quote acceptance</li>
+          <li>We install, lodge the certificate creation, and the rebate is netted off your invoice</li>
+          <li>No upfront cash from you for the rebate &mdash; it's all administered through the accredited installer</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Honest install practice &mdash; why we don't over-stuff batts.</h3>
+        <p>
+          Batts get their R-value from still air trapped in the fluffy fibre
+          structure. Compress an R5.0 batt into an R3.0-sized cavity and it
+          performs like an R3.0 batt &mdash; you've paid for R5.0 and got R3.0.
+          We size the batt to the joist depth, not the rated R-value, even if
+          that means a more expensive thicker batt. The cheap operators stuff
+          oversized batts because it's faster on site; the homeowner pays for
+          it forever in heating bills.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Downlights, exhaust fans, and the 200mm clearance rule.</h3>
+        <p>
+          AS/NZS 3000 requires 200mm clearance from non-IC-rated downlights
+          and unflued exhaust fans. We use approved downlight covers
+          (Australian-made Tenmat or similar) to maintain the thermal envelope
+          without leaving fire-risk gaps. About 60% of Cardinia Shire ceiling
+          retrofits we audit have insulation pulled back from downlights with
+          big cold zones around each &mdash; we fix this properly.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li>R5.0 ceiling batts (Earthwool, Bradford, Knauf): $25&ndash;$40/m&sup2; installed</li>
+          <li>R6.0 / R7.0 upgrade: $30&ndash;$48/m&sup2;</li>
+          <li>Blown-in cellulose: $20&ndash;$30/m&sup2;</li>
+          <li>Polyester (non-itch): $32&ndash;$45/m&sup2;</li>
+          <li>Typical 180m&sup2; Beaconsfield home: $4,500&ndash;$7,200 before VEU rebate</li>
+          <li>Typical net out-of-pocket with VEU eligibility: $1,500&ndash;$3,500</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free ceiling insulation assessment.</h2>
+        <p>5-minute roof-cavity check. VEU eligibility confirmed. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

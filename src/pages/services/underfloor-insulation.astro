@@ -1,0 +1,149 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do I need underfloor insulation if my house is on a concrete slab?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No — slab-on-ground homes (most Cardinia Lakes / Officer / Atherstone new builds) have the slab itself as thermal mass, and waffle-pod or under-slab insulation should have been installed during pour. We can't retrofit insulation under an existing slab. Underfloor insulation only applies to homes with suspended timber floors over a sub-floor space — typical of pre-1990 Beaconsfield, older Pakenham, weatherboard heritage homes, and split-level builds." }
+    },
+    {
+      "@type": "Question",
+      "name": "What R-value underfloor insulation do I need in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "NCC 2022 Climate Zone 6 requires R2.0 minimum for suspended floors. We install R2.5 polyester or glasswool batts as the standard, which gives good thermal performance and copes with the typically-restricted joist depth (90mm) in older Beaconsfield homes. R3.0+ is achievable with deeper joists but rarely worth the cost premium." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will underfloor insulation fix cold floors and drafts?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — this is where underfloor insulation pays off fastest. A suspended timber floor over an open sub-floor (typical Beaconsfield / Pakenham weatherboard) loses heat in two ways: conduction through the floor structure, and cold drafts coming up through gaps between boards. We install R2.5 polyester batts tight to the underside of the floor, supported by stainless-steel wire mesh, plus seal the bigger sub-floor vent imbalances. Customers consistently report the kitchen / living-room floor temperature lifts 3–5°C in winter, drafts disappear, gas heating runs less." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can the batts get wet from sub-floor moisture?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Polyester batts are non-absorbent and recover from incidental wetting — they're the right choice for sub-floor work. Glasswool batts are also fine if sub-floor ventilation is adequate. We never install batts in damp sub-floors: the underlying moisture issue must be fixed first (drainage, ventilation, sometimes a damp-proof membrane). If we find rising damp or pooling water at the assessment, we'll tell you to fix that first and quote underfloor separately. About 10% of Beaconsfield / Pakenham heritage homes we quote need sub-floor remediation before insulation." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is underfloor insulation eligible for VIC Energy Upgrades rebate?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Underfloor isn't currently a standalone headline VEU activity in the same way ceiling is. However, when it's part of a bundled energy-efficiency retrofit (e.g. paired with ceiling upgrade and draft-sealing), the program pathway may credit it. Standalone underfloor jobs are generally full-price. The good news: underfloor pays back fast on heating bills regardless of rebate, especially in older Beaconsfield homes." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does underfloor insulation cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "R2.5 polyester batts installed with wire mesh: $30–$50/m². Restricted-access sub-floors (under 600mm crawl) add 15–25%. Typical 120m² suspended-floor area in a Beaconsfield weatherboard: $3,600–$6,000 all up. Includes sub-floor vent imbalance fixes, but excludes damp/drainage remediation if needed (quoted separately)." }
+    }
+  ]
+};
+---
+<Layout
+  title="Underfloor Insulation Beaconsfield | Suspended Timber Floor Batts | (03) 9003 0108"
+  description="Underfloor insulation for suspended timber floors in Beaconsfield, Pakenham, Officer, Heritage Springs — R2.5 polyester batts under floorboards, draft fix, sub-floor vent balance. AS/NZS 4859 compliant. $30–$50/m². Free assessment."
+  canonical="https://beaconsfieldinsulation.com.au/services/underfloor-insulation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cold floors gone &middot; drafts sealed</span>
+      <h1>Underfloor insulation in <span class="accent">Beaconsfield &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        R2.5 polyester batts fitted tight under suspended timber floors,
+        supported by stainless-steel wire mesh. Fixes cold living-room floors,
+        seals winter drafts, drops gas heating use. Common in pre-1990
+        Beaconsfield and older Pakenham weatherboard homes.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>What we install under the floor.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>R2.5 polyester batts (Knauf Earthwool Polyester or Autex GreenStuf)</strong> &mdash; non-itch, non-absorbent, ideal for sub-floor moisture conditions. Our default. ~$32&ndash;$50/m&sup2;.</li>
+          <li><strong>R2.5 glasswool batts (Earthwool, Bradford)</strong> &mdash; cheaper, suitable where sub-floor ventilation is well-drained and dry. ~$30&ndash;$45/m&sup2;.</li>
+          <li><strong>Stainless-steel wire mesh support</strong> &mdash; mandatory to hold batts permanently against the underside of joists. Galvanised wire fails in sub-floor moisture within 5&ndash;8 years; stainless lasts the life of the house.</li>
+          <li><strong>Sub-floor vent rebalancing</strong> &mdash; counter-intuitive: insulation works better when sub-floor ventilation is balanced not blocked. We check existing vent area against AS 1684 requirements.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why suspended-floor homes lose so much heat.</h3>
+        <p>
+          A pre-1990 Beaconsfield or Pakenham weatherboard home with a
+          suspended timber floor over an open sub-floor loses heat two ways:
+          <strong>conduction</strong> through 90mm of floor joist plus
+          floorboards (effective R-value about R0.5), and <strong>convection
+          drafts</strong> coming up through gaps between aged floorboards.
+          Combined, your feet are cold and the gas heater runs constantly to
+          replace the heat going down. Insulating the underside fixes both.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Restricted-access sub-floors &mdash; the Beaconsfield gotcha.</h3>
+        <p>
+          Many older Beaconsfield homes have sub-floor crawl spaces under
+          600mm at the lowest point. We work in those (it's our specialty)
+          but it adds 15&ndash;25% to the install cost because progress is
+          slower and we need extra crew. If your home has a sub-floor
+          entirely under 400mm we may recommend lifting selected floorboards
+          from above to install batts &mdash; quoted separately depending on
+          floor type.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Sub-floor moisture &mdash; the honest pre-check.</h3>
+        <p>
+          About 10% of Beaconsfield / Pakenham heritage homes we quote have
+          underlying sub-floor moisture problems &mdash; rising damp, poor
+          drainage, blocked or insufficient ventilation. <strong>We won't
+          install batts in a damp sub-floor</strong> &mdash; the insulation
+          performs poorly and may trap moisture against the joists, causing
+          rot. We assess at the free site visit and tell you honestly: fix
+          damp first, then insulate. Sometimes the damp fix costs more than
+          the insulation; that's still better than wasting both jobs.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li>R2.5 polyester batts with stainless wire mesh: $30&ndash;$50/m&sup2;</li>
+          <li>Restricted-access sub-floor (under 600mm): +15&ndash;25%</li>
+          <li>Sub-floor vent rebalancing: included in standard install</li>
+          <li>Typical 120m&sup2; Beaconsfield weatherboard: $3,600&ndash;$6,000</li>
+          <li>Damp/drainage remediation (if needed): quoted separately</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free underfloor insulation assessment.</h2>
+        <p>Crawl-space check, moisture check, fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

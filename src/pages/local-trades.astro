@@ -1,0 +1,257 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Should I do windows or insulation first when retrofitting a Beaconsfield home?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Do them together if you can — they're the same thermal envelope. If budget forces a choice, ceiling insulation goes in first because it gives the biggest single-step performance lift (the roof is where 25–35% of winter heat loss happens) and it's cheaper per dollar of saving. Double glazing is a bigger spend with a longer payback. The exception is a leaky south-facing window wall — fix the worst draught first or you'll under-deliver on the insulation upgrade. Best to assess the whole envelope before committing."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Will adding insulation change how my HVAC system is sized?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Yes — and it's a common mistake to skip the re-sizing. An older Cardinia Shire home with no ceiling insulation might be running an 8kW reverse-cycle. Add R6 ceiling, R2.5 wall, R2.5 underfloor and the heating/cooling load drops 30–45%. The right replacement is often 5–6kW, not like-for-like. Oversized HVAC short-cycles, doesn't dehumidify properly and costs more to run. If you're doing insulation and HVAC together, share the BAL/energy figures with the HVAC installer up-front so they size off the new envelope, not the old one."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Does my hot water system benefit from the same upgrade?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Indirectly — and there's a rebate angle. The Victorian Energy Upgrades (VEU) program credits insulation, hot water heat-pump conversions and HVAC swaps under the same scheme. If you're claiming VEEC certificates for ceiling insulation, it's worth running the hot water upgrade through the same accredited provider in the same job. Heat-pump hot water uses 60–70% less energy than electric resistive, and the insulation upgrade means the home loses less ambient heat to the storage tank if it's an internal cupboard install. They're a package, not separate jobs."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Can I install insulation myself and just get it certified?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "You can install ceiling batts yourself, but you can't claim the Victorian Energy Upgrades rebate that way — the rebate requires an accredited installer who lodges the VEEC certificates. The math usually works against DIY: the rebate covers 60–80% of the install cost on a typical Beaconsfield ceiling, so paying an accredited installer often costs less out-of-pocket than buying batts retail and doing it yourself. Wall and underfloor insulation are not DIY-suitable regardless — wall cavities need professional injection, and underfloor needs respirator-grade safety gear."
+      }
+    }
+  ]
+};
+---
+<Layout
+  title="Local Trades in Cardinia Shire: Insulation & the Envelope Trades it Works With | Beaconsfield Insulation"
+  description="How ceiling, wall and underfloor insulation fits into the thermal envelope alongside double glazing, heat-pump hot water and HVAC in Beaconsfield and Cardinia Shire — VEU rebate coordination, AS 3999 install standards, council references."
+  canonical="https://beaconsfieldinsulation.com.au/local-trades/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Local trades &amp; the thermal envelope</span>
+      <h1>The <span class="accent">envelope trades</span> that work alongside an insulation upgrade.</h1>
+      <p class="hero-sub">
+        Insulation isn&rsquo;t a standalone fix &mdash; it&rsquo;s the centre
+        of the thermal envelope. Glazing, HVAC, hot water and air-sealing all
+        share the same energy story. Get the sequence right and a Beaconsfield
+        home can drop its winter bills 40&ndash;55% across one upgrade window.
+        Here&rsquo;s how the trades line up, and the standards we work to.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free insulation quote</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">The envelope team</span>
+      <h2>The trades that share the thermal envelope with us.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          A house is one envelope &mdash; floor, walls, ceiling, glazing,
+          air-seal &mdash; not five separate jobs. The R-values on the
+          insulation are only as useful as the weakest link in the chain.
+          On a typical Cardinia Shire retrofit these are the trades we
+          coordinate with, and the order they sequence in.
+        </p>
+
+        <h3 style="margin-top:2rem;">Double glazing &amp; window replacement.</h3>
+        <p>
+          A single-glazed aluminium window leaks about 5x the heat per
+          square metre that a properly-insulated wall does. Upgrading
+          ceiling insulation without addressing the glazing on a draughty
+          home will under-deliver on the energy bill drop. The crew at
+          <a href="https://doubleglazingsoutheast.com.au/" target="_blank" rel="external noopener">Double Glazing Southeast</a>
+          handle retrofit IGU (insulated glazing unit) work across
+          Beaconsfield and Cardinia &mdash; they swap the glass and seals
+          without removing the existing window frame on suitable jobs,
+          which keeps the cost down. We share the energy figures with
+          them so the home gets sized as one envelope, not two
+          unconnected upgrades. The typical order is: ceiling insulation
+          first (biggest ROI), then glazing (largest single envelope
+          weak-point), then wall and underfloor.
+        </p>
+
+        <h3 style="margin-top:2rem;">Heat-pump hot water &amp; solar.</h3>
+        <p>
+          The Victorian Energy Upgrades rebate covers insulation AND
+          hot-water-system conversions under the same scheme &mdash;
+          accredited installers can stack the certificates, which is why
+          a lot of Cardinia owners do both upgrades in one week. The
+          team at
+          <a href="https://sehotwater.com.au/" target="_blank" rel="external noopener">South East Hot Water</a>
+          handle heat-pump conversions across the Pakenham/Officer
+          corridor &mdash; replacing old electric resistive or gas
+          storage tanks with a Sanden, Reclaim or iStore heat-pump unit
+          that uses 60&ndash;70% less energy. Insulation reduces ambient
+          heat loss around an internal storage tank, so the two upgrades
+          compound. We coordinate so both VEEC claims go through the same
+          provider in one paperwork bundle.
+        </p>
+
+        <h3 style="margin-top:2rem;">HVAC sizing &amp; replacement.</h3>
+        <p>
+          The biggest mistake on insulation+HVAC packages is replacing
+          the air-con like-for-like after upgrading the envelope. The
+          home&rsquo;s heating/cooling load drops 30&ndash;45% with full
+          insulation &mdash; the new unit should be sized off the new
+          envelope, not the old one. Oversized HVAC short-cycles, runs
+          inefficiently and doesn&rsquo;t dehumidify properly. We share
+          R-value figures and an updated load calc with
+          <a href="https://pakenhamheatingcooling.com.au/" target="_blank" rel="external noopener">Pakenham Heating &amp; Cooling</a>
+          on combined upgrade jobs so they spec the right unit. They
+          typically run a Manual J load calc on Cardinia homes, which
+          most installers skip &mdash; that&rsquo;s how houses end up with
+          oversized 9kW splits when 6kW would have done the job better.
+        </p>
+
+        <h3 style="margin-top:2rem;">Roof tiler / metal roofer.</h3>
+        <p>
+          Ceiling insulation goes in BEFORE a re-roof if both jobs are on
+          the cards in the same season. Once the roof is on we can&rsquo;t
+          access the cavity from above &mdash; we have to work from inside
+          the manhole, which is slower and more expensive. If you&rsquo;re
+          planning a re-roof, get the insulation crew in for a day while
+          the battens are exposed. Sarking under the metal roof acts as a
+          radiant barrier too &mdash; it pairs with R6 ceiling batts to
+          drop summer roof-space temps 15&deg;C.
+        </p>
+
+        <h3 style="margin-top:2rem;">Air-sealing &amp; draught-proofing.</h3>
+        <p>
+          Often forgotten and the cheapest piece of the puzzle. Sealing
+          around downlights, exhaust fans, skirting gaps and the manhole
+          access plate adds the equivalent of half an R-value to ceiling
+          performance. We do basic air-sealing during ceiling installs
+          &mdash; downlight covers (IC-rated, fire-safe) and weatherstrip
+          on the manhole cover. For whole-house blower-door testing we
+          refer to a building scientist on bigger jobs.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:#f9fafb;">
+    <div class="section-inner">
+      <span class="section-eyebrow">Council, standards &amp; references</span>
+      <h2>Cardinia Shire references and the standards we install to.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          Insulation doesn&rsquo;t need a building permit in Victoria
+          (it&rsquo;s exempt under Schedule 3 of the Building Regulations)
+          but the install must meet AS 3999 and the VEU accreditation
+          standard if you&rsquo;re claiming the rebate. These are the
+          references owners ask about most.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li style="margin-bottom:0.75rem;">
+            <strong>Cardinia Shire Council</strong> &mdash; not required to
+            permit insulation, but useful for HVAC and re-roofing approvals
+            done alongside.
+            <a href="https://www.cardinia.vic.gov.au/" target="_blank" rel="external noopener">cardinia.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Victorian Energy Upgrades (VEU)</strong> &mdash; the
+            rebate program covering insulation, heat-pump hot water and
+            HVAC. Requires an accredited installer to lodge VEEC
+            certificates.
+            <a href="https://www.energy.vic.gov.au/for-households/victorian-energy-upgrades" target="_blank" rel="external noopener">energy.vic.gov.au &mdash; VEU</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>AS 3999 &mdash; Thermal insulation of dwellings</strong>
+            &mdash; the install standard. Specifies fitting around
+            downlights, sealing penetrations, eaves ventilation and the
+            10cm minimum clearance around recessed light fittings.
+            <a href="https://store.standards.org.au/" target="_blank" rel="external noopener">Standards Australia</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>NCC Volume 2 &mdash; Energy efficiency</strong> &mdash;
+            the National Construction Code provisions for envelope
+            R-values on new builds and major renovations. Cardinia sits in
+            Climate Zone 6 (mild-temperate) &mdash; minimum R5.0 ceiling,
+            R2.8 wall.
+            <a href="https://ncc.abcb.gov.au/" target="_blank" rel="external noopener">ncc.abcb.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Essential Services Commission</strong> &mdash; regulates
+            the VEEC certificate market and accredited provider register.
+            Check your installer is listed before signing.
+            <a href="https://www.esc.vic.gov.au/" target="_blank" rel="external noopener">esc.vic.gov.au</a>
+          </li>
+          <li style="margin-bottom:0.75rem;">
+            <strong>Housing Industry Association (HIA)</strong> &mdash;
+            industry body with technical guides on envelope sequencing
+            for retrofits and new builds.
+            <a href="https://hia.com.au/" target="_blank" rel="external noopener">hia.com.au</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">More on insulation</span>
+      <h2>Insulation services across Cardinia Shire.</h2>
+      <div class="divider"></div>
+      <div style="max-width:65rem;">
+        <p>
+          The trade ecosystem is half the story &mdash; the actual install
+          spec is the other half. These pages cover ceiling, wall and
+          underfloor batts, acoustic options, and where the rebate kicks in.
+        </p>
+        <ul style="margin-top:1rem;">
+          <li><a href="/services/ceiling-insulation/">Ceiling insulation</a> &mdash; the biggest single-step upgrade</li>
+          <li><a href="/services/wall-insulation/">Wall insulation</a> &mdash; cavity injection for existing homes</li>
+          <li><a href="/services/underfloor-insulation/">Underfloor insulation</a> &mdash; bulk batts and reflective foil</li>
+          <li><a href="/services/roof-insulation/">Roof insulation &amp; sarking</a> &mdash; radiant barrier under metal roofs</li>
+          <li><a href="/services/acoustic-insulation/">Acoustic insulation</a> &mdash; party walls and home theatres</li>
+          <li><a href="/beaconsfield/">Beaconsfield insulation</a> &mdash; service area landing page</li>
+          <li><a href="/cardinia-shire/">All Cardinia Shire</a> &mdash; Pakenham, Officer, Cardinia Lakes, Heritage Springs</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--ink, #0F2A47);color:#fff;">
+    <div class="section-inner" style="text-align:center;">
+      <h2 style="color:#fff;">Free quote &mdash; VEU rebate-eligible insulation.</h2>
+      <p style="opacity:0.85;max-width:50rem;margin:1rem auto 2rem;">
+        Ceiling, wall, underfloor and acoustic insulation across
+        Beaconsfield and Cardinia Shire. Accredited Victorian Energy
+        Upgrades installer &mdash; rebates lodged in the quote, AS 3999
+        install standard, R-values matched to NCC Climate Zone 6.
+      </p>
+      <div class="hero-actions" style="justify-content:center;">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Get a fixed quote</a>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,151 @@
+---
+import Layout from '../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Do you install insulation across the whole Cardinia Shire?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — full Cardinia Shire coverage from Beaconsfield in the west through Officer, Pakenham, Cardinia Lakes, Heritage Springs, Beaconsfield Upper, Nar Nar Goon, Tynong, Bunyip and Garfield. We work both the growth-corridor new-build estates (Cardinia Lakes, Officer Atherstone, Pakenham Springs) and the older heritage / rural-residential homes (Beaconsfield, Pakenham CBD, Beaconsfield Upper acreage)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Which suburbs have the biggest VIC Energy Upgrades opportunity?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Older Pakenham (pre-2000 brick veneer with R2.0 or lower ceiling) and Beaconsfield (mix of weatherboard and 1980–2000 brick) are the highest-VEU-eligibility suburbs. New estates (Cardinia Lakes, Officer Atherstone, Pakenham Springs) were built to higher minimum R-values so the eligibility floor is rarer — but cold-microclimate sites still benefit from R5.0 → R6.0/R7.0 upgrades even without rebate. Heritage Springs and Beaconsfield Upper acreage homes vary widely depending on build era." }
+    },
+    {
+      "@type": "Question",
+      "name": "Is Cardinia Shire in a single climate zone for NCC compliance?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — the entire shire sits in NCC Climate Zone 6 (mild temperate). That sets the NatHERS 7-star ceiling R-value at R5.0 minimum, walls R2.7 total system, suspended floors R2.0. The Cardinia Shire microclimate variation is significant though — Beaconsfield Upper and Officer Upper hills are noticeably colder than Pakenham flats, and we recommend higher R-values for those." }
+    }
+  ]
+};
+---
+<Layout
+  title="Insulation Across Cardinia Shire | Beaconsfield, Pakenham, Officer, Cardinia Lakes | (03) 9003 0108"
+  description="Ceiling, wall, underfloor, roof and acoustic insulation contractors across Cardinia Shire VIC — Beaconsfield, Pakenham, Officer, Cardinia Lakes, Heritage Springs. NatHERS 7-star, VIC Energy Upgrades rebate-eligible, AS/NZS 4859."
+  canonical="https://beaconsfieldinsulation.com.au/cardinia-shire/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Cardinia Shire VIC &middot; full coverage</span>
+      <h1>Insulation across the <span class="accent">Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        From cold-microclimate Beaconsfield in the west through Officer,
+        Pakenham, Cardinia Lakes and Heritage Springs, out to Beaconsfield
+        Upper acreage. Growth-corridor estates and heritage homes &mdash; two
+        very different insulation conversations &mdash; both done properly.
+        NatHERS 7-star compliant, VIC Energy Upgrades rebate-eligible.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Book a free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <span class="section-eyebrow">Full coverage</span>
+      <h2>Suburbs we cover.</h2>
+      <div class="divider"></div>
+      <div style="max-width: 65rem;">
+        <h3>Featured suburb pages.</h3>
+        <p>Suburb-specific guides &mdash; typical home age, biggest insulation opportunity, VEU eligibility profile.</p>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+          <a class="area-pill" href="/officer/">Officer</a>
+          <a class="area-pill" href="/pakenham/">Pakenham</a>
+          <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+          <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        </div>
+
+        <h3>Other Cardinia Shire suburbs we service.</h3>
+        <div class="areas-grid" style="margin: 1.5rem 0 2.5rem 0;">
+          <span class="area-pill area-pill-static">Beaconsfield Upper</span>
+          <span class="area-pill area-pill-static">Officer South</span>
+          <span class="area-pill area-pill-static">Atherstone</span>
+          <span class="area-pill area-pill-static">Pakenham Springs</span>
+          <span class="area-pill area-pill-static">Lakeside</span>
+          <span class="area-pill area-pill-static">Nar Nar Goon</span>
+          <span class="area-pill area-pill-static">Tynong</span>
+          <span class="area-pill area-pill-static">Bunyip</span>
+          <span class="area-pill area-pill-static">Garfield</span>
+          <span class="area-pill area-pill-static">Maryknoll</span>
+          <span class="area-pill area-pill-static">Iona</span>
+          <span class="area-pill area-pill-static">Cora Lynn</span>
+        </div>
+
+        <h3 style="margin-top: 2rem;">Two zones, two insulation conversations.</h3>
+        <p>
+          <strong>Growth-corridor estates</strong> (Cardinia Lakes, Officer
+          Atherstone, Pakenham Springs, Lakeside): young families, NatHERS
+          7-star new builds, walls and ceiling already meet NCC 2022 minimums.
+          Conversation is usually "upgrade ceiling to R6.0/R7.0 for cold
+          mornings", or "we forgot acoustic batts in the media room", or "the
+          builder skipped party-wall NCC F5 compliance and we need to fix it
+          before occupancy".
+        </p>
+        <p>
+          <strong>Older homes &amp; heritage</strong> (Pakenham CBD, Beaconsfield,
+          Beaconsfield Upper acreage, Heritage Springs): pre-2000 builds with
+          R2.0 or lower ceiling, often no wall insulation at all, suspended
+          timber floors with no underfloor. This is where VIC Energy Upgrades
+          rebates are biggest &mdash; ceiling retrofit alone can be net-cost
+          $1,500&ndash;$3,500 after rebate. The full upgrade pathway (ceiling
+          + wall pump-fill + underfloor) typically $8K&ndash;$14K, transforms
+          winter comfort.
+        </p>
+
+        <h3 style="margin-top: 2rem;">NCC 2022 / NatHERS 7-star R-values for Cardinia Shire.</h3>
+        <ul>
+          <li><strong>Climate Zone 6 (whole shire).</strong> Mild temperate, cold winters in the hills.</li>
+          <li><strong>Ceiling R5.0 minimum.</strong> We recommend R6.0&ndash;R7.0 for Beaconsfield / Officer Upper microclimate.</li>
+          <li><strong>Walls R2.7 total system.</strong> R2.5 batts in 90mm stud cavity plus brick/cladding sarking.</li>
+          <li><strong>Suspended floors R2.0 minimum.</strong> R2.5 polyester is the practical default.</li>
+          <li><strong>Anti-condensation sarking</strong> mandatory under new metal roofs.</li>
+          <li><strong>NCC F5 party walls</strong> Rw + Ctr &ge; 50 for duplex/townhouse compliance.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">VIC Energy Upgrades (VEU) eligibility by suburb profile.</h3>
+        <ul>
+          <li><strong>High eligibility:</strong> Pakenham (pre-2000 brick veneer), Beaconsfield (mixed weatherboard / 1980-2000 brick), Beaconsfield Upper (older rural-residential)</li>
+          <li><strong>Moderate eligibility:</strong> Officer (mid-2000s estates with R2.5&ndash;R3.5 ceiling), Heritage Springs (mix of eras)</li>
+          <li><strong>Lower eligibility:</strong> Cardinia Lakes, Atherstone, Pakenham Springs (NatHERS 7-star new builds usually start above the R2.0 threshold) &mdash; but cold-microclimate R-value upgrades still pay off</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <span class="section-eyebrow">All five services</span>
+      <h2>What we install.</h2>
+      <div class="svc-grid">
+        <a class="svc-card" href="/services/ceiling-insulation/"><h3>Ceiling insulation</h3><p>$25&ndash;$40/m&sup2;. R5.0+ batts or blown-in cellulose. VEU rebate-eligible.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/wall-insulation/"><h3>Wall insulation</h3><p>$35&ndash;$55/m&sup2;. Cavity pump-fill no plaster damage, new-build batts.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/underfloor-insulation/"><h3>Underfloor insulation</h3><p>$30&ndash;$50/m&sup2;. R2.5 polyester batts under suspended floors.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/roof-insulation/"><h3>Roof &amp; sarking</h3><p>$18&ndash;$140/m&sup2;. Anti-condensation foil, radiant barriers, rigid foam.</p><span class="svc-link">See &rarr;</span></a>
+        <a class="svc-card" href="/services/acoustic-insulation/"><h3>Acoustic insulation</h3><p>$45&ndash;$65/m&sup2;. Media rooms, NCC F5 party walls, bathrooms.</p><span class="svc-link">See &rarr;</span></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free assessment anywhere in Cardinia Shire.</h2>
+        <p>Growth-corridor or heritage. VEU eligibility confirmed at the visit. Fixed quote in 48 hours.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>

@@ -1,0 +1,155 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+<Layout
+  title="Free Insulation Assessment | Beaconsfield, Cardinia Shire | (03) 9003 0108"
+  description="Book a free on-site insulation assessment for your Beaconsfield, Officer, Pakenham, Cardinia Lakes or Heritage Springs home. R-value audit, VIC Energy Upgrades (VEU) rebate check, fixed quote within 48 hours."
+  canonical="https://beaconsfieldinsulation.com.au/quote/">
+
+  <section class="hero" style="padding: 2.5rem 0 3rem;">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Free Assessment</span>
+      <h1>Book your free insulation assessment.</h1>
+      <p class="hero-sub">
+        Tell us about your home. We&rsquo;ll come on-site for a 30&ndash;45 minute
+        visit &mdash; check existing R-values in the roof cavity, inspect the
+        sub-floor if it&rsquo;s suspended timber, confirm VIC Energy Upgrades
+        (VEU) eligibility, and talk through the right batt brand and R-value
+        spec for your home. Fixed-price written quote within 48 hours.
+        Free, no obligation.
+      </p>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="form-wrap">
+        <div class="form-card">
+          <form name="quote" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks/">
+            <input type="hidden" name="form-name" value="quote" />
+            <p style="display:none;"><label>Don&rsquo;t fill this out: <input name="bot-field" /></label></p>
+
+            <label for="name">Your name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="phone">Phone number</label>
+            <input id="phone" name="phone" type="tel" autocomplete="tel" required placeholder="04xx xxx xxx" />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="suburb">Suburb / postcode</label>
+            <input id="suburb" name="suburb" type="text" autocomplete="address-level2" required placeholder="e.g. Beaconsfield 3807, Officer 3809, Pakenham 3810" />
+
+            <label for="scope">Which insulation work are you considering?</label>
+            <select id="scope" name="scope">
+              <option value="not-sure">Not sure &mdash; want a recommendation</option>
+              <option value="ceiling-retrofit">Ceiling insulation retrofit (R5.0+ batts or blown-in)</option>
+              <option value="ceiling-veu">Ceiling upgrade using VIC Energy Upgrades (VEU) rebate</option>
+              <option value="wall-cavity">External wall cavity pump-fill (no plaster damage)</option>
+              <option value="wall-newbuild">Wall batts for a new build / extension</option>
+              <option value="underfloor">Underfloor insulation (suspended timber floor)</option>
+              <option value="roof-sarking">Roof / anti-condensation sarking under Colorbond or tile</option>
+              <option value="acoustic">Acoustic insulation (media room, party wall, plumbing noise)</option>
+              <option value="whole-house">Whole-house thermal envelope upgrade</option>
+            </select>
+
+            <label for="house-age">House age &amp; existing insulation</label>
+            <select id="house-age" name="house-age">
+              <option value="not-sure">Not sure</option>
+              <option value="new-build">New build / under construction</option>
+              <option value="post-2015">Post-2015 estate home (likely R5.0 ceiling existing)</option>
+              <option value="2000-2015">2000&ndash;2015 build (likely R2.5&ndash;R4.0 existing)</option>
+              <option value="1990-2000">1990&ndash;2000 build (likely R2.0&ndash;R3.0 existing)</option>
+              <option value="pre-1990">Pre-1990 build (often R0&ndash;R2.0 existing)</option>
+              <option value="heritage">Heritage / weatherboard, suspended timber floor</option>
+            </select>
+
+            <label for="floor-area">Approximate floor area</label>
+            <select id="floor-area" name="floor-area">
+              <option value="not-sure">Not sure</option>
+              <option value="small">Under 120m&sup2;</option>
+              <option value="medium">120&ndash;180m&sup2;</option>
+              <option value="large">180&ndash;250m&sup2;</option>
+              <option value="extra-large">250m&sup2;+</option>
+              <option value="two-storey">Two-storey (total floor area)</option>
+            </select>
+
+            <label for="primary-pain">What&rsquo;s the main pain point?</label>
+            <select id="primary-pain" name="primary-pain">
+              <option value="winter-cold">Winter cold &mdash; rooms slow to heat</option>
+              <option value="cold-floors">Cold floors and drafts up through floorboards</option>
+              <option value="summer-heat">Summer heat &mdash; upstairs unbearable</option>
+              <option value="energy-bills">High gas / electricity bills</option>
+              <option value="condensation">Condensation, mould or damp issues</option>
+              <option value="noise">Noise &mdash; media room or neighbouring townhouse</option>
+              <option value="new-build-compliance">New build NCC / NatHERS 7-star compliance</option>
+              <option value="property-value">Energy-rating upgrade before selling</option>
+              <option value="other">Other</option>
+            </select>
+
+            <label for="veu-interest">Interested in the VIC Energy Upgrades (VEU) rebate?</label>
+            <select id="veu-interest" name="veu-interest">
+              <option value="yes">Yes &mdash; please check eligibility</option>
+              <option value="not-eligible">Probably not (newer build with R5.0+ existing)</option>
+              <option value="not-sure">Not sure what VEU is</option>
+              <option value="no">No &mdash; just quote the work</option>
+            </select>
+
+            <label for="timeframe">When do you want it done?</label>
+            <select id="timeframe" name="timeframe">
+              <option value="asap">ASAP &mdash; next 2&ndash;4 weeks</option>
+              <option value="pre-winter">Before next winter</option>
+              <option value="pre-summer">Before next summer</option>
+              <option value="3-6-months">3&ndash;6 months</option>
+              <option value="12+">12 months or longer (research stage)</option>
+              <option value="not-sure">Not sure yet</option>
+            </select>
+
+            <label for="message">Any details? (optional)</label>
+            <textarea id="message" name="message" rows="4" placeholder="House construction type, known existing insulation, access issues (downlights, dropped ceilings, low sub-floor crawl), budget range, deadline, etc."></textarea>
+
+            <button class="btn btn-primary btn-block" type="submit">Send my assessment request</button>
+
+            <p style="margin-top: 1rem; font-size: 0.85rem; color: var(--c-muted);">We reply within 1 business day. Free, no obligation.</p>
+          </form>
+        </div>
+
+        <aside class="form-aside">
+          <h3>Prefer to talk?</h3>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9742;</span>
+            <div>
+              <strong>Phone</strong>
+              <a href="tel:+61390030108">(03) 9003 0108</a>
+              <p style="font-size:0.85rem; color:var(--c-muted); margin:0;">Mon&ndash;Sat 7am&ndash;6pm</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#9978;</span>
+            <div>
+              <strong>Service area</strong>
+              <p style="margin:0;">Full Cardinia Shire &mdash; Beaconsfield, Cardinia Lakes, Officer, Pakenham, Heritage Springs + Beaconsfield Upper rural-residential.</p>
+            </div>
+          </div>
+
+          <div class="info-row">
+            <span aria-hidden="true" style="font-size:1.5rem; line-height:1;">&#10004;</span>
+            <div>
+              <strong>What you&rsquo;ll get</strong>
+              <ul style="margin:0.4rem 0 0; padding-left:1rem; font-size:0.95rem; color:var(--c-text);">
+                <li>Free on-site 30&ndash;45 min R-value assessment</li>
+                <li>VEU rebate eligibility check + paperwork lodged</li>
+                <li>Honest batt vs blown-in recommendation</li>
+                <li>Fixed-price written quote within 48 hours</li>
+                <li>AS/NZS 4859 certified products, 10-year workmanship warranty</li>
+              </ul>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+  </section>
+</Layout>

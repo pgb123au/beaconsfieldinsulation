@@ -1,0 +1,163 @@
+---
+import Layout from '../../layouts/Layout.astro';
+
+const faqSchema = {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "What's the difference between ceiling insulation and roof insulation?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Ceiling insulation sits on top of the ceiling plasterboard, between the ceiling joists. Roof insulation sits at the roof line — either anti-condensation foil sarking laid under the tiles or sheet metal, or rigid foam panels above the rafters, or radiant barriers fixed to the underside of the roof. For most Beaconsfield homes, ceiling insulation does the thermal heavy-lifting; roof-line products handle radiant heat (summer), condensation control (winter), and noise (rain on Colorbond)." }
+    },
+    {
+      "@type": "Question",
+      "name": "Do I need anti-condensation sarking under my Colorbond roof?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — and this has been mandatory under NCC 2019/2022 for new metal-roofed homes in most of Victoria. Cold Beaconsfield winters + warm humid indoor air = condensation forming on the underside of cold metal roof sheets, which drips onto ceiling insulation and over time causes mould, plaster damage and stained ceilings. Anti-condensation foil sarking (e.g. Bradford Anticon, Air-Cell Permishield) breaks that surface and allows moisture to drain away. If you're re-roofing in Beaconsfield, this layer is non-negotiable. Retrofit-from-inside is possible but disruptive." }
+    },
+    {
+      "@type": "Question",
+      "name": "Will a radiant barrier (foil) reduce summer heat in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Yes — Beaconsfield does get hot summer days (35°C+) and a dark Colorbond or terracotta-tile roof can have a roof-cavity temperature of 55–65°C on a peak summer day. A reflective foil sarking or under-rafter radiant barrier reflects 95%+ of incoming radiant heat, dropping cavity temperatures by 10–18°C and reducing the load on aircon. Ceiling insulation alone slows conducted heat but doesn't stop radiant transfer; the foil + bulk insulation combination is the right pairing." }
+    },
+    {
+      "@type": "Question",
+      "name": "What's the right install order for new builds and re-roofs?",
+      "acceptedAnswer": { "@type": "Answer", "text": "For new builds and re-roofs: (1) anti-condensation foil sarking laid over the roof battens, before the metal sheets or tiles go on; (2) ceiling batts installed at lining-out stage; (3) downlight covers if recessed lighting used. For existing homes you're stuck with: ceiling batts upgraded from above, radiant barrier installed under-rafter from inside the roof cavity (less effective than over-batten but workable). We coordinate with the roof carpenter on new builds and re-roofs so the sarking goes in correctly." }
+    },
+    {
+      "@type": "Question",
+      "name": "What about cathedral / raked ceilings?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Cathedral ceilings (where the ceiling follows the roof rafters, no roof cavity) are the trickiest. Options: rigid foam panels above the rafters in a re-roof, batts installed between rafters with a ventilation channel maintained above (per AS 4200.2 to prevent condensation), or internal lining drop with batts. We do all three. Honest reality: cathedral ceilings rarely achieve R5.0 without significant work — R3.5–R4.0 is more typical. Common in Beaconsfield architect-designed homes and converted attics." }
+    },
+    {
+      "@type": "Question",
+      "name": "How much does roof insulation cost in Beaconsfield?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Anti-condensation foil sarking (re-roof or new build, over battens): $18–$28/m² of roof area. Reflective radiant barrier (under-rafter retrofit): $22–$35/m². Rigid foam panel above-rafter system (premium): $80–$140/m². A typical 200m² roof: $3,600–$5,600 for sarking, $4,400–$7,000 for under-rafter barrier retrofit. Often bundled with ceiling insulation for whole-of-roof thermal upgrade." }
+    }
+  ]
+};
+---
+<Layout
+  title="Roof Insulation Beaconsfield | Anti-Condensation Sarking & Radiant Barriers | (03) 9003 0108"
+  description="Roof insulation for Beaconsfield, Pakenham, Officer — anti-condensation foil sarking under Colorbond and tile roofs, reflective radiant barriers, rigid foam above-rafter panels. NCC 2022 compliant. AS 4200.2 condensation managed. $18–$140/m²."
+  canonical="https://beaconsfieldinsulation.com.au/services/roof-insulation/">
+  <Fragment slot="head">
+    <script type="application/ld+json" set:html={JSON.stringify(faqSchema)} />
+  </Fragment>
+
+  <section class="hero">
+    <div class="hero-inner">
+      <span class="hero-eyebrow">Anti-condensation &middot; radiant barrier</span>
+      <h1>Roof insulation in <span class="accent">Beaconsfield &amp; Cardinia Shire</span>.</h1>
+      <p class="hero-sub">
+        Anti-condensation foil sarking under Colorbond and tile roofs, reflective
+        radiant barriers, rigid foam above-rafter panels. NCC 2022 compliant,
+        AS 4200.2 condensation managed. Pairs with ceiling batts for the
+        full thermal envelope.
+      </p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+        <a class="btn btn-ghost" href="/quote/">Free assessment</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <h2>Roof-line insulation we install.</h2>
+      <div style="max-width: 65rem;">
+        <ul>
+          <li><strong>Bradford Anticon / Air-Cell Permishield anti-condensation foil sarking</strong> &mdash; vapour-permeable foil laid over battens during re-roof. Mandatory under NCC for new metal roofs. $18&ndash;$28/m&sup2;.</li>
+          <li><strong>Reflective radiant barrier (Sisalation, Foilboard)</strong> &mdash; reflects 95%+ of summer radiant heat. Above-rafter (re-roof) or under-rafter (retrofit). $22&ndash;$35/m&sup2;.</li>
+          <li><strong>Above-rafter rigid foam panel system</strong> &mdash; Kingspan or similar PIR foam panels installed above rafters during re-roof. Premium thermal performance for cathedral ceilings. $80&ndash;$140/m&sup2;.</li>
+          <li><strong>Cathedral-ceiling rafter batts with ventilation channel</strong> &mdash; R3.5&ndash;R4.0 batts with 25mm ventilation channel maintained per AS 4200.2 to prevent condensation. Built-in during construction or retrofit with internal lining drop.</li>
+        </ul>
+
+        <h3 style="margin-top: 2rem;">Why anti-condensation sarking matters in Beaconsfield.</h3>
+        <p>
+          On a cold winter night the underside of an uninsulated Colorbond
+          sheet can drop to 2&ndash;5&deg;C. Warm humid air from showers,
+          cooking, breathing rises into the roof cavity, hits that cold
+          metal, and condenses. Drops form, run down the underside, drip
+          onto ceiling batts. Over a winter the batts get saturated, plaster
+          stains, mould grows in the cavity. We see this in 30% of Cardinia
+          Shire roof inspections on homes built 1990&ndash;2010 (before
+          anti-condensation sarking was mandatory).
+        </p>
+        <p>
+          <strong>Anti-condensation foil sarking</strong> (Bradford Anticon,
+          Air-Cell Permishield) is a vapour-permeable foil with an absorbent
+          surface that breaks the condensation layer and allows moisture to
+          drain to the eaves. NCC 2019/2022 makes this layer mandatory for
+          new metal-roofed homes in Climate Zone 6 (which includes Cardinia
+          Shire). For existing homes, retrofit at the next re-roof.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Summer radiant heat &mdash; the foil pairing.</h3>
+        <p>
+          Beaconsfield gets 35&deg;C+ summer days. A dark Colorbond or
+          terracotta-tile roof can have a roof-cavity temperature of
+          55&ndash;65&deg;C on a peak day. Even with R5.0 ceiling batts, that
+          radiant heat soaks through eventually and overloads aircon. A
+          reflective foil sarking (above the rafters at re-roof) or radiant
+          barrier (under rafters retrofit) reflects 95%+ of incoming radiant
+          heat, dropping cavity temperatures by 10&ndash;18&deg;C. Aircon
+          run-time drops 25&ndash;40% on hot days.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Cathedral / raked ceilings &mdash; honest reality.</h3>
+        <p>
+          Cathedral ceilings (where the lining follows the rafters, no roof
+          cavity) are the hardest to insulate properly. Three workable approaches:
+        </p>
+        <ul>
+          <li><strong>Rigid foam panel above rafters</strong> at re-roof &mdash; best thermal, expensive, only at re-roof time</li>
+          <li><strong>R3.5&ndash;R4.0 batts between rafters with 25mm ventilation channel</strong> per AS 4200.2 &mdash; the most common spec for new builds</li>
+          <li><strong>Internal lining drop with full batts</strong> &mdash; retrofit option, loses 100mm ceiling height</li>
+        </ul>
+        <p>
+          Be honest with yourself: cathedral ceilings rarely achieve R5.0 like
+          flat-ceiling spaces. R3.5&ndash;R4.0 is normal; the radiant barrier
+          + bulk batts combination gets you most of the way.
+        </p>
+
+        <h3 style="margin-top: 2rem;">Pricing.</h3>
+        <ul>
+          <li>Anti-condensation foil sarking (re-roof or new build): $18&ndash;$28/m&sup2;</li>
+          <li>Under-rafter radiant barrier retrofit: $22&ndash;$35/m&sup2;</li>
+          <li>Above-rafter rigid foam panel: $80&ndash;$140/m&sup2;</li>
+          <li>Cathedral-ceiling rafter batts: quoted on roof complexity</li>
+          <li>Typical 200m&sup2; roof sarking re-roof: $3,600&ndash;$5,600</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <section class="section section-alt">
+    <div class="section-inner">
+      <h2>Where we work.</h2>
+      <div class="areas-grid">
+        <a class="area-pill" href="/beaconsfield/">Beaconsfield</a>
+        <a class="area-pill" href="/officer/">Officer</a>
+        <a class="area-pill" href="/pakenham/">Pakenham</a>
+        <a class="area-pill" href="/cardinia-lakes/">Cardinia Lakes</a>
+        <a class="area-pill" href="/heritage-springs/">Heritage Springs</a>
+        <a class="area-pill" href="/cardinia-shire/">All Cardinia Shire</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="section-inner">
+      <div class="cta-block">
+        <h2>Free roof insulation assessment.</h2>
+        <p>Condensation risk audit, radiant barrier sizing, re-roof coordination.</p>
+        <div class="hero-actions" style="justify-content:center;">
+          <a class="btn btn-primary" href="tel:+61390030108">&#9742; Call (03) 9003 0108</a>
+          <a class="btn btn-ghost" href="/quote/">Book online</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</Layout>
